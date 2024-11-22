@@ -14,4 +14,4 @@ mage_data/
 secrets/
 mage_demo/data/
 .env
-mage_demo/spark-config/
+mage_demo/spark-config/*.jar
