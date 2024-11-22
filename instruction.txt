@@ -50,9 +50,14 @@ changed the spark_config in metadata.yaml:
 added the following to requirements.txt : 
     pyspark==3.4.0
     minio
-    delta-spark==2.4.0 #if you want to use delta
+    delta-spark==2.4.0
+    SQLAlchemy==2.0.36
 
 did a :  "mage build"
+
+started the containers : "make up"
+
+open ui : "make browse"
 
 
 
