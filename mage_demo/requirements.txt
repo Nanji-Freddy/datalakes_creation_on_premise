@@ -1,0 +1,4 @@
+pyspark==3.4.0
+minio
+delta-spark==2.4.0
+SQLAlchemy==2.0.36

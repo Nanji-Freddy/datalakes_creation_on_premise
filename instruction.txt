@@ -1,0 +1,59 @@
+to execute the makefile we do a  : "make create"
+The make file hepls us do sequential tasks we don't wan to do ourself like runing our Dockerfile in this case 
+
+check the mage ui we run : "make browse"
+
+since the make file doesn't build automaticaly we do a: "make build"
+
+to start all service together we do a : "make up"
+
+to check miniIO we go to : "localhost:9001"
+
+dbeaker config  : 
+    ->Choose a new database connection.
+    ->Select MySQL (a StarRocks plugin might be available as well).
+    ->Enter the following details:
+        ->Host: localhost
+        ->Port: 9030
+        ->Username: root
+
+added the spark-config in mage_deom/
+changed the spark_config in metadata.yaml:
+    spark_config:
+        # Application name
+        app_name: 'MageSparkSession'
+        # Master URL to connect to
+        # e.g., spark_master: 'spark://host:port', or spark_master: 'yarn'
+        spark_master: "local"
+        # Executor environment variables
+        # e.g., executor_env: {'PYTHONPATH': '/home/path'}
+        executor_env: {}
+        # Jar files to be uploaded to the cluster and added to the classpath
+        # e.g., spark_jars: ['/home/path/example1.jar']
+        spark_jars: [
+            #delta
+            '/home/mage_code/mage_demo/spark-config/hadoop-aws-3.3.4.jar', 
+            '/home/mage_code/mage_demo/spark-config/aws-java-sdk-bundle-1.12.262.jar',
+            '/home/mage_code/mage_demo/spark-config/delta-storage-2.4.0.jar',
+            '/home/mage_code/mage_demo/spark-config/delta-core_2.12-2.4.0.jar',
+            #iceberg
+            '/home/mage_code/mage_demo/spark-config/bundle-2.26.15.jar',
+            '/home/mage_code/mage_demo/spark-config/url-connection-client-2.26.15.jar',
+            '/home/mage_code/mage_demo/spark-config/iceberg-spark-runtime-3.5_2.12-1.5.2.jar',]
+        # Path where Spark is installed on worker nodes,
+        # e.g. spark_home: '/usr/lib/spark'
+        spark_home:
+        # List of key-value pairs to be set in SparkConf
+        # e.g., others: {'spark.executor.memory': '4g', 'spark.executor.cores': '2'}
+        others: {}
+
+added the following to requirements.txt : 
+    pyspark==3.4.0
+    minio
+    delta-spark==2.4.0 #if you want to use delta
+
+did a :  "mage build"
+
+
+
+ 
