@@ -1,7 +1,3 @@
-Here's a complete, polished README for your project:
-
----
-
 # **Data Lake Creation on Premise**
 
 This project demonstrates the creation of a local data lake using **MinIO**, **Apache Iceberg**, **Apache Spark**, **StarRocks**, **Mage**, and **Docker**. It enables efficient data storage, processing, and analysis in a local environment, allowing you to build a complete data lake from scratch.
