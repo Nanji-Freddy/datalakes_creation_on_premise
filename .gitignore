@@ -15,3 +15,4 @@ secrets/
 mage_demo/data/
 .env
 mage_demo/spark-config/*.jar
+django_api/myenv

@@ -61,4 +61,10 @@ open ui : "make browse"
 
 
 
- 
+
+--------------------------------------------------------------------------------------- API PART ------------------------------------------------------------------------------
+run django project: python manage.py runserver 
+
+
+
+ http://127.0.0.1:8000/car_ecommerce/data/inconsistent_ad_campaign_data_with_cars/
