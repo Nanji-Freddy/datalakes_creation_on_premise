@@ -1,7 +1,3 @@
-Here is the structured **README** file incorporating the architecture, business intelligence (BI) aspects, and relevant visuals based on your project documentation.
-
----
-
 # **Data Lake Creation on Premise**
 
 This project demonstrates the creation of a local data lake leveraging **MinIO**, **Apache Iceberg**, **Apache Spark**, **StarRocks**, **Mage**, and **Docker**. It establishes a robust infrastructure for scalable data ingestion, transformation, and querying, enabling efficient analytics in an on-premise environment.
