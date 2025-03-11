@@ -100,21 +100,29 @@ Business intelligence (BI) plays a crucial role in extracting insights from data
    - **Metric**: Sales trends over time.
    - **Use Case**: Identifying revenue fluctuations and growth patterns.
    - **Visualization**: Time-series chart.
+  
+   ![Architecture Overview](images/sales.png)
 
 2. **Marketing Campaign Effectiveness**
    - **Metric**: Click-through rate (CTR), conversion rate.
    - **Use Case**: Assessing **ad performance** to optimize future marketing strategies.
    - **Visualization**: KPI dashboards.
+  
+   ![Architecture Overview](images/pub.png)
 
 3. **Website Log Analysis**
    - **Metric**: User activity logs and session analysis.
    - **Use Case**: Understanding visitor behavior and optimizing user experience.
    - **Visualization**: Heatmaps and log trend analysis.
+  
+   ![Architecture Overview](images/logs.png)
 
 4. **Social Media Sentiment Analysis**
    - **Metric**: Public sentiment on social platforms (Twitter, Instagram).
    - **Use Case**: Evaluating brand perception and customer feedback.
    - **Visualization**: Word cloud and sentiment trend graphs.
+  
+     ![Architecture Overview](images/reseau.png)
 
 ---
 
