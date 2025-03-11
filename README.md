@@ -87,6 +87,9 @@ The data lake architecture comprises multiple layers, each fulfilling a critical
 - REST API built with Django to **expose data insights**.
 - Facilitates **seamless integration** with external applications.
 
+
+![Architecture Overview](images/architecture.png)
+
 ---
 
 ## **Business Intelligence and Data Visualization**
